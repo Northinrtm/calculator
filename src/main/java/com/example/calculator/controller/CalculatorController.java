@@ -21,25 +21,25 @@ public class CalculatorController {
     }
 
     @GetMapping("/plus")
-    public String printSum(@RequestParam int num1, @RequestParam int num2) throws Exception {
+    public String printSum(@RequestParam int num1, @RequestParam int num2) {
         String s = num1 + " + " + num2 + " = " + calculatorService.printSum(num1, num2);
         return s;
     }
 
     @GetMapping("/minus")
-    public String printMinus(@RequestParam int num1, @RequestParam int num2) throws Exception {
+    public String printMinus(@RequestParam int num1, @RequestParam int num2) {
         String s = num1 + " - " + num2 + " = " + calculatorService.printMinus(num1, num2);
         return s;
     }
 
     @GetMapping("/multiply")
-    public String printMultiply(@RequestParam int num1, @RequestParam int num2) throws Exception {
+    public String printMultiply(@RequestParam int num1, @RequestParam int num2) {
         String s = num1 + " * " + num2 + " = " + calculatorService.printMultiply(num1, num2);
         return s;
     }
 
     @GetMapping("/divide")
-    public String printDivide(@RequestParam int num1, @RequestParam int num2) throws Exception {
+    public String printDivide(@RequestParam int num1, @RequestParam int num2) {
         String s = num1 + " / " + num2 + " = " + calculatorService.printDivide(num1, num2);
         return s;
     }
